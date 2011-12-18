@@ -11,6 +11,29 @@
         #{get 'moreScripts' /}
     </head>
     <body>
-        #{doLayout /}
+		<div id="header">
+			<div id="logo">
+				YABE
+			</div>
+			<ul id="tools">
+                <li>
+                    <a href="#">Log in to write something</a>
+                </li>
+            </ul>
+            <div id="title">
+				<span class="about">About this blog</span>
+				<br>
+                <span><a href="#">${blogTitle}</a> | ${blogBaseline} </span>
+            </div>
+		</div>
+		
+		<div id="main">
+			#{doLayout /}
+		</div>
+		
+		<p id="footer">
+			This is a very powerful blog engine. Developed by N3O
+			For more info go to <a href="http://www.playframework.org">Play</a>
+		</p>
     </body>
 </html>
